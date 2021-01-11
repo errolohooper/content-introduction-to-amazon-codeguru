@@ -58,6 +58,9 @@ public class App implements RequestHandler<Object, Object> {
         }
     }
 
+    
+    
+    
     private void storeData(final String ipv4) throws AmazonServiceException {
         final AmazonDynamoDB ddb = AmazonDynamoDBClientBuilder.defaultClient();
         final String now = ZonedDateTime.now(ZoneOffset.UTC).format(DateTimeFormatter.ISO_INSTANT);
